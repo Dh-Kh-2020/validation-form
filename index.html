@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript challenge No.1 | Validation Form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <script>
+        function validationFrom(){
+            var nameRegex = /^[a-zA-Z0-9]{3,10}$/;
+            var validUserName = document.form.username.value.match(nameRegex);
+
+            if(validUserName){             
+                document.write("Your name is not valid. It must be more than 3 and less 10 letters");              
+                document.form.username.focus();
+                return false;
+            } 
+        }
+    </script> -->
+</head>
+<body>
+    <div class="container">
+        <h2 class="cont-h2">Contact ME</h2>
+        <form action="">
+            <input class="" type="text" onkeyup="validateName(this);" id="fullName" name="fullName" placeholder="Your Name">
+            <input class="input" type="number" onkeyup="validateAge(this);" id="age" name="age" placeholder="Your Age, You Must be older then 18">
+            <input class="input" type="email" onkeyup="validateEmail(this);" id="email" name="email" placeholder="Your E-mail">
+            <input class="input" type="tel" onkeyup="validatePhone(this);" id="Phone" name="Phone" placeholder="Phone: 777------">
+            <input class="input" type="password" onkeyup="validatePassword(this);" id="password" name="password" placeholder="Your Password">
+            <input class="input" type="password" onkeyup="validateRePassword(this);" id="confPassword" name="confPassword" placeholder="Confirm Password">
+            <input class="input" type="url" onkeyup="validateURL(this);" id="link" name="link" placeholder="URL">
+            <textarea class="input" onkeyup="validateMSG(this);" id="msg" name="msg" placeholder="Your Massege" style="height:200px"></textarea>
+
+            <input class="input" id="submit" type="submit" value="Send">
+        </form>
+    </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
